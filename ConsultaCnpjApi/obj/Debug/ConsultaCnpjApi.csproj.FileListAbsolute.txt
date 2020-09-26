@@ -83,3 +83,10 @@ C:\Users\LUISAUGUSTOBRUNELLIP\Desktop\Programas\ConsultaCnpjApi\ConsultaCnpjApi\
 C:\Users\LUISAUGUSTOBRUNELLIP\Desktop\Programas\ConsultaCnpjApi\ConsultaCnpjApi\obj\Debug\ConsultaCnpjApi.csproj.CopyComplete
 C:\Users\LUISAUGUSTOBRUNELLIP\Desktop\Programas\ConsultaCnpjApi\ConsultaCnpjApi\obj\Debug\ConsultaCnpjApi.dll
 C:\Users\LUISAUGUSTOBRUNELLIP\Desktop\Programas\ConsultaCnpjApi\ConsultaCnpjApi\obj\Debug\ConsultaCnpjApi.pdb
+C:\Users\LUISAUGUSTOBRUNELLIP\Desktop\Programas\ConsultaCnpjApi\ConsultaCnpjApi\bin\EntityFramework.dll
+C:\Users\LUISAUGUSTOBRUNELLIP\Desktop\Programas\ConsultaCnpjApi\ConsultaCnpjApi\bin\EntityFramework.SqlServer.dll
+C:\Users\LUISAUGUSTOBRUNELLIP\Desktop\Programas\ConsultaCnpjApi\ConsultaCnpjApi\bin\EntityFramework.xml
+C:\Users\LUISAUGUSTOBRUNELLIP\Desktop\Programas\ConsultaCnpjApi\ConsultaCnpjApi\bin\EntityFramework.SqlServer.xml
+C:\Users\LUISAUGUSTOBRUNELLIP\Desktop\Programas\ConsultaCnpjApi\ConsultaCnpjApi\obj\Debug\ConsultaCnpjApi.Migrations.EntidadeEmpesacriada.resources
+C:\Users\LUISAUGUSTOBRUNELLIP\Desktop\Programas\ConsultaCnpjApi\ConsultaCnpjApi\obj\Debug\ConsultaCnpjApi.csproj.GenerateResource.cache
+C:\Users\LUISAUGUSTOBRUNELLIP\Desktop\Programas\ConsultaCnpjApi\ConsultaCnpjApi\obj\Debug\ConsultaCnpjApi.Migrations.EntidadesRelativascriadas.resources
