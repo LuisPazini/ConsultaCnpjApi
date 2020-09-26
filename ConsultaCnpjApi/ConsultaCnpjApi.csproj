@@ -168,7 +168,6 @@
     <Compile Include="Models\Extra.cs" />
     <Compile Include="Models\Qsa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\api\ClasseParaCommit.cs" />
     <Compile Include="Resources\api\ConsultaReceitaWs.cs" />
   </ItemGroup>
   <ItemGroup>
