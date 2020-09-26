@@ -7,7 +7,7 @@ namespace ConsultaCnpjApi.Models
 {
     public class Billing
     {
-        private bool free { get; set; }
-        private bool database { get; set; }
+        public bool free { get; set; }
+        public bool database { get; set; }
     }
 }

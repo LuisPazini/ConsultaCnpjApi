@@ -7,7 +7,7 @@ namespace ConsultaCnpjApi.Models
 {
     public class Atividades_Secundarias
     {
-        private string text { get; set; }
-        private string code { get; set; }
+        public string text { get; set; }
+        public string code { get; set; }
     }
 }
