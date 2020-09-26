@@ -38,7 +38,7 @@ namespace ConsultaCnpjApi.Controllers
                 contexto.Empresas.Add(new Empresa()
                 {
                     Id = empresa.Id,
-                    Data_situacao = empresa.Data_situacao,
+                    Data_Situacao = empresa.Data_Situacao,
                     Tipo = empresa.Tipo,
                     Nome = empresa.Nome,
                     Uf = empresa.Uf,

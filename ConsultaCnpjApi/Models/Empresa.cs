@@ -8,36 +8,35 @@ namespace ConsultaCnpjApi.Models
     public class Empresa
     {
         public int Id { get; set; }
-        public Atividade_Principal[] atividade_principal { get; set; }
-        public string data_situacao { get; set; }
-        public object Data_situacao { get; internal set; }
-        public string tipo { get; set; }
-        public string nome { get; set; }
-        public string uf { get; set; }
-        public string telefone { get; set; }
-        public string email { get; set; }
-        public Atividades_Secundarias[] atividades_secundarias { get; set; }
-        public Qsa[] qsa { get; set; }
-        public string situacao { get; set; }
-        public string bairro { get; set; }
-        public string logradouro { get; set; }
-        public string numero { get; set; }
-        public string cep { get; set; }
-        public string municipio { get; set; }
-        public string porte { get; set; }
-        public string abertura { get; set; }
-        public string natureza_juridica { get; set; }
-        public string fantasia { get; set; }
-        public string cnpj { get; set; }
-        public DateTime ultima_atualizacao { get; set; }
-        public string status { get; set; }
-        public string complemento { get; set; }
-        public string efr { get; set; }
-        public string motivo_situacao { get; set; }
-        public string situacao_especial { get; set; }
-        public string data_situacao_especial { get; set; }
-        public string capital_social { get; set; }
-        public Extra extra { get; set; }
-        public Billing billing { get; set; }
+        public Atividade_Principal[] Atividade_Principal { get; set; }
+        public string Data_Situacao { get; set; }
+        public string Tipo { get; set; }
+        public string Nome { get; set; }
+        public string Uf { get; set; }
+        public string Telefone { get; set; }
+        public string Email { get; set; }
+        public Atividades_Secundarias[] Atividades_Secundarias { get; set; }
+        public Qsa[] Qsa { get; set; }
+        public string Situacao { get; set; }
+        public string Bairro { get; set; }
+        public string Logradouro { get; set; }
+        public string Numero { get; set; }
+        public string Cep { get; set; }
+        public string Municipio { get; set; }
+        public string Porte { get; set; }
+        public string Abertura { get; set; }
+        public string Natureza_Juridica { get; set; }
+        public string Fantasia { get; set; }
+        public string Cnpj { get; set; }
+        public DateTime Ultima_Atualizacao { get; set; }
+        public string Status { get; set; }
+        public string Complemento { get; set; }
+        public string Efr { get; set; }
+        public string Motivo_Situacao { get; set; }
+        public string Situacao_Especial { get; set; }
+        public string Data_Situacao_Especial { get; set; }
+        public string Capital_Social { get; set; }
+        public Extra Extra { get; set; }
+        public Billing Billing { get; set; }
     }
 }
