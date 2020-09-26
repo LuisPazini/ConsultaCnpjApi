@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\LUISAUGUSTOBRUNELLIP\\Desktop\\Programas\\Not GIt\\ConsultaCnpjApi\\ConsultaEmpresa\\ConsultaEmpresa.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\LUISAUGUSTOBRUNELLIP\\Desktop\\Programas\\Not GIt\\ConsultaCnpjApi\\ConsultaCnpjApi\\ConsultaCnpjApi.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\LUISAUGUSTOBRUNELLIP\\Desktop\\Programas\\Not GIt\\ConsultaCnpjApi\\ConsultaCnpjApi\\ConsultaCnpjApi.csproj",
+        "projectName": "ConsultaCnpjApi",
+        "projectPath": "C:\\Users\\LUISAUGUSTOBRUNELLIP\\Desktop\\Programas\\Not GIt\\ConsultaCnpjApi\\ConsultaCnpjApi\\ConsultaCnpjApi.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\LUISAUGUSTOBRUNELLIP\\Desktop\\Programas\\Not GIt\\ConsultaCnpjApi\\ConsultaEmpresa\\ConsultaEmpresa.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\LUISAUGUSTOBRUNELLIP\\Desktop\\Programas\\Not GIt\\ConsultaCnpjApi\\ConsultaEmpresa\\ConsultaEmpresa.csproj",
+        "projectName": "ConsultaEmpresa",
+        "projectPath": "C:\\Users\\LUISAUGUSTOBRUNELLIP\\Desktop\\Programas\\Not GIt\\ConsultaCnpjApi\\ConsultaEmpresa\\ConsultaEmpresa.csproj",
+        "packagesPath": "C:\\Users\\LUISAUGUSTOBRUNELLIP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LUISAUGUSTOBRUNELLIP\\Desktop\\Programas\\Not GIt\\ConsultaCnpjApi\\ConsultaEmpresa\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LUISAUGUSTOBRUNELLIP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\LUISAUGUSTOBRUNELLIP\\Desktop\\Programas\\Not GIt\\ConsultaCnpjApi\\ConsultaCnpjApi\\ConsultaCnpjApi.csproj": {
+                "projectPath": "C:\\Users\\LUISAUGUSTOBRUNELLIP\\Desktop\\Programas\\Not GIt\\ConsultaCnpjApi\\ConsultaCnpjApi\\ConsultaCnpjApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
