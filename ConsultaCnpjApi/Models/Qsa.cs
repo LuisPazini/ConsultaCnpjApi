@@ -7,7 +7,7 @@ namespace ConsultaCnpjApi.Models
 {
     public class Qsa
     {
-        public string qual { get; set; }
-        public string nome { get; set; }
+        private string qual { get; set; }
+        private string nome { get; set; }
     }
 }

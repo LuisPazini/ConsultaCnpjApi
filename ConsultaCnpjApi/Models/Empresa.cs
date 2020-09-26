@@ -7,35 +7,35 @@ namespace ConsultaCnpjApi.Models
 {
     public class Empresa
     {
-        public Atividade_Principal[] atividade_principal { get; set; }
-        public string data_situacao { get; set; }
-        public string tipo { get; set; }
-        public string nome { get; set; }
-        public string uf { get; set; }
-        public string telefone { get; set; }
-        public string email { get; set; }
-        public Atividades_Secundarias[] atividades_secundarias { get; set; }
-        public Qsa[] qsa { get; set; }
-        public string situacao { get; set; }
-        public string bairro { get; set; }
-        public string logradouro { get; set; }
-        public string numero { get; set; }
-        public string cep { get; set; }
-        public string municipio { get; set; }
-        public string porte { get; set; }
-        public string abertura { get; set; }
-        public string natureza_juridica { get; set; }
-        public string fantasia { get; set; }
-        public string cnpj { get; set; }
-        public DateTime ultima_atualizacao { get; set; }
-        public string status { get; set; }
-        public string complemento { get; set; }
-        public string efr { get; set; }
-        public string motivo_situacao { get; set; }
-        public string situacao_especial { get; set; }
-        public string data_situacao_especial { get; set; }
-        public string capital_social { get; set; }
-        public Extra extra { get; set; }
-        public Billing billing { get; set; }
+        private Atividade_Principal[] atividade_principal { get; set; }
+        private string data_situacao { get; set; }
+        private string tipo { get; set; }
+        private string nome { get; set; }
+        private string uf { get; set; }
+        private string telefone { get; set; }
+        private string email { get; set; }
+        private Atividades_Secundarias[] atividades_secundarias { get; set; }
+        private Qsa[] qsa { get; set; }
+        private string situacao { get; set; }
+        private string bairro { get; set; }
+        private string logradouro { get; set; }
+        private string numero { get; set; }
+        private string cep { get; set; }
+        private string municipio { get; set; }
+        private string porte { get; set; }
+        private string abertura { get; set; }
+        private string natureza_juridica { get; set; }
+        private string fantasia { get; set; }
+        private string cnpj { get; set; }
+        private DateTime ultima_atualizacao { get; set; }
+        private string status { get; set; }
+        private string complemento { get; set; }
+        private string efr { get; set; }
+        private string motivo_situacao { get; set; }
+        private string situacao_especial { get; set; }
+        private string data_situacao_especial { get; set; }
+        private string capital_social { get; set; }
+        private Extra extra { get; set; }
+        private Billing billing { get; set; }
     }
 }
