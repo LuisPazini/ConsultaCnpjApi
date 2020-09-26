@@ -8,7 +8,7 @@ namespace ConsultaCnpjApi.Services
 {
     public class ConsultaReceitaWs
     {
-        public async Task<Empresa> consultar(string cnpj)
+        public async Task<Empresa> Consultar(string cnpj)
         {
             using (HttpClient client = new HttpClient())
             {
