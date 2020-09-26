@@ -16,8 +16,8 @@ namespace ConsultaCnpjApi
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                routeTemplate: "api/{controller}/{cnpj}",
+                defaults: new { cnpj = RouteParameter.Optional }
             );
 
             config.Formatters.Remove(config.Formatters.XmlFormatter);

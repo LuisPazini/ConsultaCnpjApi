@@ -10,6 +10,7 @@ namespace ConsultaCnpjApi.Models
         public int Id { get; set; }
         public Atividade_Principal[] atividade_principal { get; set; }
         public string data_situacao { get; set; }
+        public object Data_situacao { get; internal set; }
         public string tipo { get; set; }
         public string nome { get; set; }
         public string uf { get; set; }

@@ -1,4 +1,6 @@
 ﻿using ConsultaCnpjApi.Models;
+using ConsultaCnpjApi.Resources.db;
+using ConsultaCnpjApi.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,14 +19,35 @@ namespace ConsultaCnpjApi.Controllers
         }
 
         // GET: api/Empresas/5
-        public string Get(int id)
+        public async System.Threading.Tasks.Task<Empresa> GetAsync(string cnpj)
         {
-            return id.ToString();
+                        
+            return null;
         }
 
         // POST: api/Empresas
-        public void Post([FromBody]string value)
+        public async System.Threading.Tasks.Task PostAsync([FromBody]string cnpj)
         {
+            // Consultando os dados na API da Receita
+            ConsultaReceitaWs consulta = new ConsultaReceitaWs();
+            Empresa empresa = await consulta.Consultar(cnpj);
+
+            // Adicionando a empresa no Banco de Dados
+            using (Contexto contexto = new Contexto())
+            {
+                contexto.Empresas.Add(new Empresa()
+                {
+                    Id = empresa.Id,
+                    Data_situacao = empresa.Data_situacao,
+                    Tipo = empresa.Tipo,
+                    Nome = empresa.Nome,
+                    Uf = empresa.Uf,
+                    Telefone = empresa.Telefone,
+                    Email = empresa.Email
+                });
+
+                contexto.SaveChanges();
+            }
         }
 
         // PUT: api/Empresas/5
