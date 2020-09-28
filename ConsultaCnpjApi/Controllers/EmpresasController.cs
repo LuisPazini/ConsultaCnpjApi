@@ -75,40 +75,7 @@ namespace ConsultaCnpjApi.Controllers
             {
                 using (Contexto contexto = new Contexto())
                 {
-                    contexto.Empresas.Add(new Empresa()
-                    {
-                        Id = empresa.Id,
-                        Atividade_Principal = empresa.Atividade_Principal,
-                        Data_Situacao = empresa.Data_Situacao,
-                        Tipo = empresa.Tipo,
-                        Nome = empresa.Nome,
-                        Uf = empresa.Uf,
-                        Telefone = empresa.Telefone,
-                        Email = empresa.Email,
-                        Atividades_Secundarias = empresa.Atividades_Secundarias,
-                        Qsa = empresa.Qsa,
-                        Situacao = empresa.Situacao,
-                        Bairro = empresa.Bairro,
-                        Logradouro = empresa.Logradouro,
-                        Numero = empresa.Numero,
-                        Cep = empresa.Cep,
-                        Municipio = empresa.Municipio,
-                        Porte = empresa.Porte,
-                        Abertura = empresa.Abertura,
-                        Natureza_Juridica = empresa.Natureza_Juridica,
-                        Fantasia = empresa.Fantasia,
-                        Cnpj = empresa.Cnpj,
-                        Ultima_Atualizacao = empresa.Ultima_Atualizacao,
-                        Status = empresa.Status,
-                        Complemento = empresa.Complemento,
-                        Efr = empresa.Efr,
-                        Motivo_Situacao = empresa.Motivo_Situacao,
-                        Situacao_Especial = empresa.Situacao_Especial,
-                        Data_Situacao_Especial = empresa.Data_Situacao_Especial,
-                        Capital_Social = empresa.Capital_Social,
-                        Extra = empresa.Extra,
-                        Billing = empresa.Billing
-                    });
+                    contexto.Empresas.Add(empresa);
 
                     contexto.SaveChanges();
                 }
