@@ -96,6 +96,8 @@ namespace ConsultaCnpjApi.Controllers
                 using (Contexto contexto = new Contexto())
                 {
                     contexto.Empresas.Remove(contexto.Empresas.Find(id));
+
+                    contexto.SaveChanges();
                 }
             }
             catch (Exception)
