@@ -9,6 +9,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Helpers;
 using System.Web.Http;
+using System.Web.Http.Results;
 using System.Web.UI.WebControls;
 
 namespace ConsultaCnpjApi.Controllers
@@ -16,7 +17,7 @@ namespace ConsultaCnpjApi.Controllers
     public class EmpresasController : ApiController
     {
         // GET: api/Empresas
-        public List<Empresa> Get()
+        public IHttpActionResult Get()
         {
             try
             {
@@ -25,38 +26,47 @@ namespace ConsultaCnpjApi.Controllers
                     List<Empresa> empresas = new List<Empresa>();
                     contexto.Empresas.ForEach(e => empresas.Add(e));
 
-                    return empresas;
+                    if(empresas.Count() == 0)
+                    {
+                        return StatusCode(HttpStatusCode.NoContent);
+                    }
+
+                    return Ok(empresas);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw new Exception("Erro ao listar CNPJs");
+                throw new Exception("Erro ao listar CNPJs: " + ex.Message);
             }
         }
 
         // GET: api/Empresas/{id}
-        public Empresa Get(int id)
+        public IHttpActionResult Get(int id)
         {
+            Empresa empresa;
             try
             {
                 using (Contexto contexto = new Contexto())
                 {
-                    Empresa empresa = contexto.Empresas.Find(id);
-                    return empresa;
+                    empresa = contexto.Empresas.Find(id);
+                    if (empresa == null)
+                    {
+                        return StatusCode(HttpStatusCode.NotFound);
+                    }
+
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw new Exception("Erro ao consultar CNPJ");
+                throw new Exception("Erro ao consultar CNPJ: " + ex.Message);
             }
+            return Ok(empresa);
         }
 
         // POST: api/Empresas
         public async System.Threading.Tasks.Task<IHttpActionResult> PostAsync([FromBody] Empresa e)
         {
-            Empresa empresa = new Empresa();
+            Empresa empresa;
 
             // Consultando os dados na API da Receita
             try
@@ -64,10 +74,9 @@ namespace ConsultaCnpjApi.Controllers
                 ConsultaReceitaWs consulta = new ConsultaReceitaWs();
                 empresa = await consulta.Consultar(e.Cnpj);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw new Exception("Erro ao consultar CNPJ na Receita");
+                throw new Exception("Erro ao consultar CNPJ na Receita: " + ex.Message);
             }
 
             // Adicionando a empresa no Banco de Dados
@@ -80,31 +89,35 @@ namespace ConsultaCnpjApi.Controllers
                     contexto.SaveChanges();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw new Exception("Erro ao cadastrar CNPJ");
+                throw new Exception("Erro ao cadastrar CNPJ: " + ex.Message);
             }
-            return Ok();
+            return StatusCode(HttpStatusCode.Created);
         }
 
         // DELETE: api/Empresas/{id}
-        public void Delete(int id)
+        public IHttpActionResult Delete(int id)
         {
             try
             {
                 using (Contexto contexto = new Contexto())
                 {
-                    contexto.Empresas.Remove(contexto.Empresas.Find(id));
+                    Empresa empresa = contexto.Empresas.Find(id);
+                    if(empresa == null)
+                    {
+                        return StatusCode(HttpStatusCode.NotFound);
+                    }
+                    contexto.Empresas.Remove(empresa);
 
                     contexto.SaveChanges();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw new Exception("Erro ao remover CNPJ");
+                throw new Exception("Erro ao remover CNPJ: " + ex.Message);
             }
+            return StatusCode(HttpStatusCode.NoContent);
         }
     }
 }

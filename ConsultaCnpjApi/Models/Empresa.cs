@@ -8,7 +8,7 @@ namespace ConsultaCnpjApi.Models
     public class Empresa
     {
         public int Id { get; set; }
-        public Atividade_Principal[] Atividade_Principal { get; set; }
+        public List<Atividade_Principal> Atividade_Principal { get; set; }
         public string Data_Situacao { get; set; }
         public string Tipo { get; set; }
         public string Nome { get; set; }

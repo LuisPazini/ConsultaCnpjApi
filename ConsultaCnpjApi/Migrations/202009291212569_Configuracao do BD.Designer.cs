@@ -7,13 +7,13 @@ namespace ConsultaCnpjApi.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class Alteracoesnosnomesdemetodos : IMigrationMetadata
+    public sealed partial class ConfiguracaodoBD : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Alteracoesnosnomesdemetodos));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ConfiguracaodoBD));
         
         string IMigrationMetadata.Id
         {
-            get { return "202009262359504_Alteracoes nos nomes de metodos"; }
+            get { return "202009291212569_Configuracao do BD"; }
         }
         
         string IMigrationMetadata.Source
