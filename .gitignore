@@ -4,3 +4,4 @@
 
 /ConsultaCnpjApi/App_Data/ConsultaCnpjApi.Resources.db.Contexto.mdf
 /ConsultaCnpjApi/App_Data/ConsultaCnpjApi.Resources.db.Contexto_log.ldf
+/ConsultaCnpjApi/Models/EmpresaModelFactory.cs

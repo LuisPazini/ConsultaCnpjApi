@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace ConsultaCnpjApi.Models
     public class Empresa
     {
         public int Id { get; set; }
+        //[JsonProperty("atividade_principal")]
         public List<Atividade_Principal> Atividade_Principal { get; set; }
         public string Data_Situacao { get; set; }
         public string Tipo { get; set; }
@@ -15,8 +17,8 @@ namespace ConsultaCnpjApi.Models
         public string Uf { get; set; }
         public string Telefone { get; set; }
         public string Email { get; set; }
-        public Atividades_Secundarias[] Atividades_Secundarias { get; set; }
-        public Qsa[] Qsa { get; set; }
+        public List<Atividades_Secundarias> Atividades_Secundarias { get; set; }
+        public List<Qsa> Qsa { get; set; }
         public string Situacao { get; set; }
         public string Bairro { get; set; }
         public string Logradouro { get; set; }

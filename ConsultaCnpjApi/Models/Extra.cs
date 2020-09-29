@@ -8,5 +8,6 @@ namespace ConsultaCnpjApi.Models
     public class Extra
     {
         public int Id { get; set; }
+        public string Text { get; set; }
     }
 }

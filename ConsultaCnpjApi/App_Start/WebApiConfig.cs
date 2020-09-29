@@ -11,7 +11,9 @@ namespace ConsultaCnpjApi
         {
             // Web API configuration and services
             config.Formatters.Remove(config.Formatters.XmlFormatter);
-            config.Formatters.JsonFormatter.Indent = true;
+            config.Formatters.Add(config.Formatters.JsonFormatter);
+
+            config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
 
             // Web API routes
             config.MapHttpAttributeRoutes();

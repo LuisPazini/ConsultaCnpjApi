@@ -13,7 +13,7 @@ namespace ConsultaCnpjApi.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202009291212569_Configuracao do BD"; }
+            get { return "202009292124331_Configuracao do BD"; }
         }
         
         string IMigrationMetadata.Source
