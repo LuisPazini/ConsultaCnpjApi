@@ -2,5 +2,4 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/ConsultaCnpjApi/App_Data/ConsultaCnpjApi.Resources.db.Contexto.mdf
-/ConsultaCnpjApi/App_Data/ConsultaCnpjApi.Resources.db.Contexto_log.ldf
+
